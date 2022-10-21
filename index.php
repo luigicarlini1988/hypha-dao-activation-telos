@@ -90,7 +90,7 @@
                </div>
 
                <div id="amount-info">
-                 <p>Amount to buy:</p>
+                 <p>Hypha Tokens to buy:</p>
                  <p class="hypha-amount-purchase">
                    <img class="hypha-curr" src="img/round-logo.svg">
                    <span id="hypha-amount-to-buy">1,300.00</span>
