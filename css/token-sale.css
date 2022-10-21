@@ -1,0 +1,639 @@
+#buyhypha-wizard {
+  width:100%;
+  max-width:560px;
+  margin-top:0px;
+
+}
+
+header.static .logo img {
+  width:60px;
+}
+
+header.static .logo  {
+  margin-left:20px;
+  width:80px;
+}
+
+.multistep .foglio {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.multistep {
+  min-height:100vh;
+  height:auto;
+  padding:80px 0px;
+  background-image:url(../img/3-steps-back.jpg);
+  background-size:cover;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.token-slides-wrapper {
+    background-color: var(--dark-blu);
+}
+
+#buyhypha-slides {
+  margin-top: 0px;
+  padding-top: 60px;
+
+}
+
+#buyhypha-slides > .slide {
+  max-width: 100%;
+  margin: 10px 0px;
+  border-radius: 10px;
+}
+
+.slide > img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.simple-button-yellow.no-arrow:after {
+  display:none;
+}
+
+.simple-button-yellow.no-arrow:hover {
+  text-decoration: underline;
+}
+
+
+
+.preview {
+  width:calc(100% - 40px);
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#step-1,
+#step-2,
+#step-3,
+#step-4 {
+  background:#fff;
+  box-shadow: var(--box-shadow);
+  border-radius:20px;
+  overflow: hidden;
+}
+
+
+.steps-top {
+  text-align:center;
+  padding:12px 38px 38px 28px;
+  box-sizing: border-box;
+  color:var(--dark-blu);
+}
+
+.steps-bottom {
+  text-align:center;
+    padding: 40px 20px 50px 20px;
+    background: var(--light-sand);
+    color:var(--dark-blu);
+}
+
+.step-nav {
+  display:flex;
+  width: 150px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px auto;
+}
+
+.step-nav .stp{
+  width:12px;
+  height:12px;
+  background:var(--light-sand);
+  border-radius: 100%;
+}
+
+.step-nav .stp.active {
+  width:40px;
+  height:40px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color:var(--dark-blu);
+  font-weight:700;
+}
+
+.step-nav .stp.done {
+  background:var(--yellow);
+}
+
+.step-nav .stp.active p {
+  line-height:1em;
+}
+.steps-top h2 {
+  margin-top:10px;
+}
+
+.steps-bottom input {
+  min-width:300px;
+  padding:18px;
+  border:1px solid var(--light-sand);
+  border-radius:60px;
+  color:var(--dark-blu);
+  text-align: center;
+  font-family: var(--bodys);
+  font-size:16px;
+  box-sizing: border-box;
+}
+
+.error-message {
+    font-size: 13px;
+    color: red;
+    margin-top: 10px;
+}
+
+.steps-bottom input.error {
+  border:1px solid red;
+}
+
+.warning-message {
+  font-size: 13px;
+  color: var(--yellow);
+  margin-top: 10px;
+}
+
+.steps-bottom input.warning {
+border:1px solid var(--yellow);
+}
+
+.steps-bottom input::placeholder {
+  color:var(--dark-blu);
+  opacity:.4;
+}
+
+.steps-bottom input:focus {
+    outline: none;
+}
+
+.steps-action {
+  margin-top:50px;
+}
+
+button#button-next {
+  padding: 14px 26px;
+  font-size: 16px;
+  border-radius: 30px;
+  color: var(--dark-blu);
+  font-weight: 600;
+  background-color: var(--yellow);
+  transition-duration: .2s;
+  -moz-transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  margin: 0px 8px;
+  line-height: 1.3em;
+  border:1px solid var(--yellow);
+  cursor:pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+button#button-next.inactive,
+button#button-previous.inactive {
+  display:none;
+}
+
+button#button-previous {
+    padding: 14px 26px;
+    font-size: 16px;
+    border-radius: 30px;
+    color: var(--dark-blu);
+    border: 1px solid var(--dark-blu);
+    font-weight: 600;
+    background-color: transparent;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    margin: 0px 8px;
+    line-height: 1.3em;
+    cursor:pointer;
+}
+
+button#button-next:hover,
+button#button-previous:hover {
+  transform:scale(1.04);
+}
+
+
+/*step 2*/
+
+.account-welcome {
+  padding-top:20px;
+}
+
+#account-img {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--light-sand);
+    background-image:url(../img/no-user.png);
+    background-size:100%;
+}
+
+#account-img img {
+  width:100%;
+
+}
+
+#token-sale-info p {
+  margin:0;
+}
+
+.account-welcome p {
+  margin-top:3px;
+}
+
+#account-name {
+  font-weight:700;
+  color:var(--yellow);
+}
+
+#token-sale-info p.hypha-price {
+  margin-top:0px;
+  padding-bottom:20px;
+}
+
+#hypha-value-usd {
+  font-weight:700;
+  color:var(--yellow);
+  font-size:22px;
+}
+
+.hts {
+  font-family:var(--titles);
+  font-size:36px;
+}
+
+span.htsn {
+    font-family:var(--bodys);
+    font-size:16px;
+    font-weight:700;
+}
+
+span#sale-round {
+  color:var(--yellow);
+  font-size:36px;
+}
+
+.steps-bottom h4 {
+  margin-top:0;
+  font-size:32px;
+  margin-bottom:0;
+}
+
+#payment-options {
+    display: flex;
+    justify-content: center;
+}
+
+.token-pay {
+  width:80px
+}
+
+.token-pay img {
+  width:100%;
+}
+
+.token-select p {
+  margin:0;
+}
+
+.token-select {
+  margin:12px;
+  padding:12px;
+  border-radius:20px;
+  border:1px solid var(--light-sand);
+  transition-duration: .2s;
+  -moz-transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  cursor:pointer;
+
+}
+
+.token-select:hover {
+  background:#fff;
+  transform:scale(1.02);
+}
+
+.token-select.selected:hover {
+  transform:scale(1.0);
+}
+
+.token-select.selected {
+  background:#fff;
+  border:1px solid var(--yellow);
+}
+
+/* step 3 */
+
+.cont-count {
+  display:flex;
+  justify-content: center;
+}
+
+.cont-count img {
+   width: 20px;
+   margin-left: 6px;
+}
+
+#token-sale-availability p {
+  margin-top:0;
+  margin-bottom:6px;
+}
+p#hypha-available {
+  font-size:32px;
+  margin:0;
+}
+
+#token-sale-availability .remaining-this .p-small {
+  line-height:16px;
+  margin-top:16px;
+}
+
+.to-usd {
+  font-size:14px;
+}
+
+#step-3 h2 {
+  margin-top:44px;
+  margin-bottom:18px;
+}
+
+#converter {
+  display:flex;
+  justify-content: center;
+  margin-top:20px;
+  font-size:14px;
+
+}
+
+.conv-cript {
+
+  border-right:1px solid var(--dark-blu);
+  padding-right:10px;
+
+}
+.conv-usd {
+  margin-left:10px;
+}
+
+input#hypha-amount-to-buy {
+  font-size:28px;
+  padding:10px;
+
+}
+
+.input-wrap {
+  position:relative;
+  max-width: max-content;
+  margin: auto;
+}
+.input-wrap::before {
+  width:26px;
+  height:26px;
+  content:"";
+  position:absolute;
+  right:16px;
+  top:14px;
+  background-image:url("/img/round-logo.svg");
+  background-size:26px;
+}
+
+input#hypha-amount-to-buy::placeholder {
+  opacity:.6;
+}
+
+
+/* step 4*/
+
+#step-4 .steps-action {
+  margin-top:10px;
+}
+
+.bill #total-hypha-to-buy {
+  font-size:32px;
+  font-weight:600;
+  color:var(--yellow);
+}
+
+.bill #total-cripto-to-send {
+  font-size:22px;
+  font-weight:600;
+  color:var(--yellow);
+}
+
+.bill #selected-method {
+  font-weight:600;
+}
+
+.eos-bill-card {
+  width: max-content;
+    padding: 18px;
+    margin: auto;
+    border: 1px solid var(--dark-blu);
+    border-radius: 12px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.eos-bill-card #hypha-eos-address,
+.eos-bill-card #hypha-eos-memo,
+.eos-bill-card #total-eos-to-send {
+  font-weight:700;
+  font-size:20px;
+}
+
+.memo-space,
+.eos-amount-space {
+  padding-top:10px;
+  border-top:1px solid #ccc;
+  margin-top:12px;
+}
+
+.copy {
+  width: 24px;
+  height: 27px;
+  background: url(/img/copy-2.svg);
+  background-size: 24px;
+  cursor: pointer;
+  margin-left: 20px;
+  position:relative;
+}
+
+.copy:before {
+    position: absolute;
+    content: "copy";
+    right: -60px;
+    transition-duration:.2s;
+    -moz-transition-duration:.2s;
+    -webkit-transition-duration:.2s;
+    opacity:0;
+}
+
+.copy:hover:before {
+  opacity:1;
+  right:-70px;
+}
+
+
+.address-title,
+.eos-amount-space,
+.memo-space {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.btc-bill-card {
+  width: max-content;
+    padding: 18px;
+    margin: auto;
+    border: 1px solid var(--dark-blu);
+    border-radius: 12px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.btc-address-title div {
+  display:flex;
+  justify-content: space-between;
+}
+
+#hypha-btc-address {
+  font-weight: 700;
+}
+
+.btc-amount-space {
+  margin-top:12px;
+  padding-top:12px;
+  border-top:1px solid #ccc;
+  display:flex;
+  justify-content: space-between;
+}
+
+#total-btc-to-send {
+  font-weight:700;
+  font-size:20px;
+}
+
+#btc-qr-code {
+  width:180px;
+  height:180px;
+  margin:60px auto 20px auto;
+  background-color:var(--light-sand);
+  text-align: center;
+  padding:0;
+  box-sizing: border-box;
+  border-radius: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btc-qr-code img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+#btc-qr-code .lds-ring {
+  width: 80px;
+  height: 80px;
+}
+
+#btc-qr-code .lds-ring div {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+  border: 5px solid var(--dark-blu);
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: var(--dark-blu) transparent transparent transparent;
+}
+
+/*new TELOS stuff*/
+
+.hypha-amount-purchase {
+  text-align:center;
+  font-size:42px;
+  margin:12px 0px;
+}
+
+.hypha-amount-purchase img {
+  width: 18px;
+  margin-right: 0;
+  transform: translateY(-4px);
+}
+
+.conversion {
+  margin:0;
+}
+
+.eos-bill-card #hypha-eos-address,
+.eos-bill-card #hypha-eos-memo,
+.eos-bill-card #total-eos-to-send,
+#total-btc-to-send {
+  margin-left:7px;
+}
+
+header.static h1 {
+  display:block!important;
+}
+
+.spacer {
+  height:150px;
+  width:100%;
+}
+
+
+@media screen and (max-width : 600px) {
+  header.static {
+    position:absolute;
+  }
+
+  header.static h1 {
+    display:block!important;
+    margin-top:8px;
+  }
+
+  header.static .logo {
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  header.static .logo img {
+    width:32px;
+  }
+
+  .steps-top {
+    padding:12px 22px 28px 22px
+  }
+
+  .steps-bottom input {
+    max-width: 100%;
+    min-width: 280px;
+  }
+
+  .eos-bill-card,
+  .btc-bill-card {
+    padding:8px;
+  }
+
+  #hypha-btc-address {
+    font-size:13px;
+  }
+}
