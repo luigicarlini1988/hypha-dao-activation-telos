@@ -223,9 +223,7 @@ button#button-previous:hover {
 
 /*step 2*/
 
-.account-welcome {
-  padding-top:20px;
-}
+
 
 #account-img {
     width: 80px;
@@ -594,6 +592,10 @@ header.static h1 {
 .spacer {
   height:150px;
   width:100%;
+}
+
+.account-welcome {
+  padding-top:20px;
 }
 
 
